@@ -1,0 +1,11 @@
+{
+    "name": "carloswph/wc-order-status",
+    "description": "WooCommerce custom order status helper.",
+    "type": "library",
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"WPH\\WC\\": "src/"
+    	}
+    }
+}

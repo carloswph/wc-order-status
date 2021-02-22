@@ -1,11 +1,21 @@
 {
     "name": "carloswph/wc-order-status",
-    "description": "WooCommerce custom order status helper.",
+    "description": "WooCommerce comprehensive helper for custom order statuses.",
     "type": "library",
+    "keywords": ["woocommerce","orders","wc", "wordpress", "woocommerce plugin"],
     "require": {},
     "autoload": {
     	"psr-4": {
     		"WPH\\WC\\": "src/"
     	}
-    }
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Carlos Matos | WP Helpers",
+            "email": "carlos@wp-helpers.com",
+            "homepage": "https://wp-helpers.com"
+        }
+    ],
+    "minimum-stability": "dev"
 }

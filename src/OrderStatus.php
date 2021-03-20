@@ -17,6 +17,9 @@ class OrderStatus {
 		
 		add_action('init', array($this, 'register'));
 		add_filter('wc_order_statuses', array($this, 'list'));
+		add_filter( 'bulk_actions-edit-shop_order', array($this, 'bulk');
+
+		add_action('admin_action_' . $this->statusSlug, array($this, 'bulk_process'));
 
 		if($colors) {
 
@@ -28,6 +31,20 @@ class OrderStatus {
 			}
 			
 			add_action('admin_footer', array($this, 'css'));
+		}
+	}
+
+	public function bulk( $bulk_actions ) {
+ 
+		$bulk_actions[$this->statusSlug] = $this->statusName;
+		return $bulk_actions;
+	 
+	}
+
+	public function bulk_process() {
+
+		if(!isset( $_REQUEST['post']) && !is_array($_REQUEST['post'])) {
+			return;
 		}
 	}
 

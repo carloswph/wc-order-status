@@ -25,6 +25,7 @@ require __DIR__ . '/vendor/autoload.php';
 new OrderStatus('Custom Status', array('orange', '#ededed'));
 
 ```
+**Obs:** any CSS predefined color name and HEX color will work, but also any other format accepted in CSS (rgb, rgba, hsl, hsla).
 
 # Todo
 
